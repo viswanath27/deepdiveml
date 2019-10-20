@@ -1,11 +1,11 @@
 from flask import Flask, url_for, render_template, request
 #from flask_mysqldb import MySQL
-#from flask_ngrok import run_with_ngrok
+from flask_ngrok import run_with_ngrok
 import random
 import pyodbc
 
 app = Flask(__name__)
-#run_with_ngrok(app)
+run_with_ngrok(app)
 
 '''
 app.config['MYSQL_HOST'] = 'deepdivedb.database.windows.net'
